@@ -2397,6 +2397,7 @@ if (typeof PDFJSDev === "undefined" || PDFJSDev.test("GENERIC")) {
     "http://mozilla.github.io",
     "https://mozilla.github.io",
   ]);
+  HOSTED_VIEWER_ORIGINS.add(window.location?.origin || "null");
   // eslint-disable-next-line no-var
   var validateFileURL = function (file) {
     if (!file) {
